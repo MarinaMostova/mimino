@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="image/x-icon" href="./src/images/favicon.ico" rel="shortcut icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>MIMIHO</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a class="logo logo--white" href="./index.html">MIMIHO</a>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Ресторан</a>
+              <a class="navigation__contacts" href="tel:">
+                <svg class="navigation__icon" width="24" height="24">
+                  <use href="../src/images/symbol-defs.svg#phone-24"></use>
+                </svg>
+                <span class="navigation__phone">095 555 95 33</span>
+              </a>
+            </li>
+
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Готель</a>
+              <a class="navigation__contacts" href="tel:">
+                <svg class="navigation__icon" width="24" height="24">
+                  <use href="../src/images/symbol-defs.svg#phone-24"></use>
+                </svg>
+                <span class="navigation__phone navigation__phone--long">066 849 10 89</span>
+                <span class="navigation__phone">067 275 85 40</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__networks">
+          <ul class="networks header__networks">
+            <li class="networks__item">
+              <a target="_blank" href="#">
+                <svg class="networks__icon" width="24px" height="24px">
+                  <use href="./src/images/symbol-defs.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="networks__item">
+              <a target="_blank" href="">
+                <svg class="networks__icon" width="24px" height="24px">
+                  <use href="./src/images/symbol-defs.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="networks__item">
+              <a target="_blank" href="">
+                <svg class="networks__icon" width="24px" height="24px">
+                  <use href="./src/images/symbol-defs.svg#telegram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <h1 class="hero__title">MIMIHO</h1>
+        <h2 class="hero__subtitle">Ресторанно-готельний комплекс</h2>
+        <p class="hero__text">Смак життя 24/7</p>
+
+        <div class="hero__box">
+          <div class="map__container">
+            <a
+              class="map"
+              href="https://goo.gl/maps/JDG9t9WZnoFPtrtn9"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+            >
+              <svg class="map__icon" width="20px" height="20px">
+                <use href="./src/images/symbol-defs.svg#location-pin"></use>
+              </svg>
+              <span class="map__text"
+                >Україна, м. Полтава, <br />
+                вул. Маршала Бірюзова, 15</span
+              >
+            </a>
+          </div>
+
+          <ul class="hero__list">
+            <li class="hero__item">
+              <button class="button" type="button">Забронювати столик</button>
+            </li>
+            <li>
+              <button class="button" type="button">Забронювати номер</button>
+            </li>
+          </ul>
+        </div>
+        <div class="hero__networks">
+          <ul class="networks">
+            <li class="networks__item">
+              <a target="_blank" href="#">
+                <svg class="networks__icon" width="24px" height="24px">
+                  <use href="./src/images/symbol-defs.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="networks__item">
+              <a target="_blank" href="">
+                <svg class="networks__icon" width="24px" height="24px">
+                  <use href="./src/images/symbol-defs.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="networks__item">
+              <a target="_blank" href="">
+                <svg class="networks__icon" width="24px" height="24px">
+                  <use href="./src/images/symbol-defs.svg#telegram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section main-restaurant">
+        <div class="container">
+          <h2 class="main-restaurant__title visually-hidden">About our restaurant</h2>
+          <span class="main-restaurant__subtitle">Amet minim mollit non</span>
+          <h3 class="main-restaurant__name">MIMIHO</h3>
+          <ul>
+            <li>
+              <div class="main-restaurant__block">
+                <p class="main-restaurant__text main-restaurant__text--dark">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                  officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
+                  nostrud amet.
+                </p>
+                <picture>
+                  <source
+                    srcset="
+                      ./src/images/main/desk1-min.jpg    1x,
+                      ./src/images/main/desk1@2x-min.jpg 2x
+                    "
+                    media="(min-width:1280px)"
+                  />
+                  <source
+                    srcset="./src/images/main/tab1-min.jpg 1x, ./src/images/main/tab1@2x-min.jpg 2x"
+                    media="(min-width:1024px)"
+                  />
+                  <source
+                    srcset="./src/images/main/mob1-min.jpg 1x, ./src/images/main/mob1@2x-min.jpg 2x"
+                    media="(max-width:1023px)"
+                  />
+                  <img
+                    class="main-restaurant__image main-restaurant__image--taller"
+                    src="./src/images/main/mob1-min.jpg"
+                    alt="Ресторанна зала"
+                  />
+                </picture>
+              </div>
+            </li>
+
+            <li>
+              <div class="main-restaurant__box">
+                <picture>
+                  <source
+                    srcset="
+                      ./src/images/main/desk2-min.jpg    1x,
+                      ./src/images/main/desk2@2x-min.jpg 2x
+                    "
+                    media="(min-width:1280px)"
+                  />
+                  <source
+                    srcset="./src/images/main/tab2-min.jpg 1x, ./src/images/main/tab2@2x-min.jpg 2x"
+                    media="(min-width:1024px)"
+                  />
+                  <source
+                    srcset="./src/images/main/mob2-min.jpg 1x, ./src/images/main/mob2@2x-min.jpg 2x"
+                    media="(max-width:1023px)"
+                  />
+                  <img
+                    class="main-restaurant__image"
+                    src="./src/images/main/mob2-min.jpg"
+                    alt="Ресторанна зала"
+                  />
+                </picture>
+                <p class="main-restaurant__text main-restaurant__text--brown">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                  officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
+                  nostrud amet.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section restaurant-details">
+        <div class="container">
+          <div class="restaurant-details__wrap">
+            <span class="restaurant-details__name">MIMIHO</span>
+            <h2 class="restaurant-details__title">Ресторан</h2>
+            <p class="restaurant-details__text">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+              officia consequat duis enim velit mollit.
+            </p>
+          </div>
+          <ul class="restaurant-details__list">
+            <li class="restaurant-details__item">
+              <button class="button restaurant-details__button" type="button">
+                Забронювати столик
+              </button>
+            </li>
+            <li class="restaurant-details__item">
+              <a class="button-link restaurant-details__button--link" href="#">Переглянути меню</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section contacts">
+        <div class="container contacts__container">
+          <h2 class="contacts__title visually-hidden">Contacts</h2>
+          <span class="contacts__name">MIMIHO</span>
+          <h3 class="contacts__subtitle">Ресторанно-готельний комплекс</h3>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <p class="contacts__text">Ресторан</p>
+              <a class="contacts__link" href="tel:">
+                <svg class="contacts__icon" width="24" height="24">
+                  <use href="../src/images/symbol-defs.svg#phone-24"></use>
+                </svg>
+                <span class="contacts__phone">095 555 95 33</span>
+              </a>
+            </li>
+
+            <li class="contacts__item">
+              <p class="contacts__text">Готель</p>
+              <a class="contacts__link" href="tel:">
+                <svg class="contacts__icon" width="24" height="24">
+                  <use href="../src/images/symbol-defs.svg#phone-24"></use>
+                </svg>
+                <span class="contacts__phone">066 849 10 89</span>
+                <span class="contacts__phone">067 275 85 40</span>
+              </a>
+            </li>
+
+            <li class="contacts__item">
+              <p class="contacts__text contacts__text--trasparent">Адреса</p>
+              <a
+                class="contacts__link contacts__link--map"
+                href="https://goo.gl/maps/JDG9t9WZnoFPtrtn9"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="contacts__icon" width="24px" height="24px">
+                  <use href="./src/images/symbol-defs.svg#location-pin"></use>
+                </svg>
+                <span class="contacts__adress"
+                  >Україна, м. Полтава, <br />
+                  вул. Маршала Бірюзова, 15</span
+                >
+              </a>
+            </li>
+          </ul>
+          <div class="contacts__map">
+            <iframe
+              class="contacts__iframe"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.708037471091!2d34.5243576157008!3d49.599193979366994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d82601f3347a5f%3A0x36f3f9aeec44a6a!2z0YPQuy4g0JzQsNGA0YjQsNC70LAg0JHQuNGA0Y7Qt9C-0LLQsCwgMTUsINCf0L7Qu9GC0LDQstCwLCDQn9C-0LvRgtCw0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgMzYwMDA!5e1!3m2!1sru!2sua!4v1669672802551!5m2!1sru!2sua"
+              width="400"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu"></section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="logo__box">
+          <a class="logo logo--accent" href="./index.html">MIMIHO</a>
+        </div>
+
+        <div class="footer__menu">
+          <ul class="footer__list">
+            <li class="footer__item"><a class="footer__link" href="./index.html">Головна</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Ресторан</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Готель</a></li>
+          </ul>
+
+          <ul class="networks footer__networks">
+            <li class="networks__item">
+              <a target="_blank" href="#">
+                <svg class="networks__icon" width="24px" height="24px">
+                  <use href="./src/images/symbol-defs.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="networks__item">
+              <a target="_blank" href="">
+                <svg class="networks__icon" width="24px" height="24px">
+                  <use href="./src/images/symbol-defs.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="networks__item">
+              <a target="_blank" href="">
+                <svg class="networks__icon" width="24px" height="24px">
+                  <use href="./src/images/symbol-defs.svg#telegram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+%subtitle{
+font-family: var(--subtitle-font);
+     font-weight: 400;
+    font-size: 20px;
+    line-height:1.15;
+    color:var(--text-subtitle-color);
+    letter-spacing: 0;
+@media screen and (max-width:1023px) {
+    margin-bottom: 12px;
+}
+
+    @media screen and (min-width:1024px) {
+    font-size: 32px;
+    line-height: 1.16;
+    }
+}
+
+
+%text{
+    font-family: var(--prymary-font);
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+}
+
+
+%text--dark{
+   
+    color: var(--text-dark-color);
+    @media screen and (max-width:1023px) {
+            margin-bottom: 382px;
+            max-width: 258px;
+        }
+}
+
+%text--brown {
+       color: var(--text-brown-color);
+
+    @media screen and (max-width:1023px) {
+        margin-bottom: 0;
+        max-width: 163px;
+    }
+}
+
+
+%image{
+ 
+box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+}
+
+%image--main {
+    position: absolute;
+    top: 210px;
+    right: 15px;
+}
+
+
+%brand-name {
+    display: block;
+    font-family: var(--logo-font);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.08;
+    letter-spacing: 0.3em;
+    color: #494848;
+   }
+
+%brand-name__hero {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 303px;
+
+    font-family: var(--logo-font);
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 1.07;
+    letter-spacing: 0.3em;
+
+    color: var(--text-white-color);
+    margin-bottom: 24px;
+
+    @media screen and (min-width:1024px) {
+        max-width: 404px;
+        font-size: 128px;
+        line-height: 1.08;
+        margin-bottom: 16px;
+    }
+}

@@ -1,0 +1,125 @@
+
+.restaurant-details{
+padding-top: 24px;
+padding-bottom: 40px;
+    height: 100%;
+     margin: 0 auto;
+
+     
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+            url(../src/images/main/bcg-mob1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+        @media (min-resolution: 192dpi) {
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                url(../src/images/main/bcg-mob1@2x.jpg);
+        }
+    
+        @media (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                url(../src/images/main/bcg-mob1@2x.jpg);
+        }
+       
+        @media screen and (min-width:414px) {
+            max-width: 414px;
+        }
+    
+    
+        @media screen and (min-width:1024px) {
+    
+            max-width: 1024px;
+            padding-top: 188px;
+            padding-bottom: 15px;
+    
+    
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                url(../src/images/main/bcg-tab1.jpg);
+    
+            @media (min-resolution: 192dpi) {
+                background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                    url(../src/images/main/bcg-tab1@2x.jpg);
+            }
+    
+            @media (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                    url(../src/images/main/bcg-tab1@2x.jpg);
+            }
+    
+        }
+    
+        @media screen and (min-width:1280px) {
+            max-width: 1280px;
+            padding-top: 164px;
+            padding-bottom: 64px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                url(../src/images/main/bcg-desk1.jpg);
+    
+            @media (min-resolution: 192dpi) {
+                background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                    url(../src/images/main/bcg-desk1@2x.jpg);
+            }
+    
+            @media (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                    url(../src/images/main/bcg-desk1@2x.jpg);
+            }
+        }
+    }
+
+    .restaurant-details__wrap{
+    margin-left: 125px;
+    }
+
+.restaurant-details__name{
+    @extend %brand-name;
+    color:var(--text-white-color);
+
+    margin-bottom: 12px;
+}
+
+
+.restaurant-details__title{
+    font-family: --prymary-font;
+       
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+    
+    color: var(--text-white-color);
+
+    margin-bottom: 20px;
+}
+
+.restaurant-details__text{
+    @extend %text;
+    color: #BABABA;;
+    max-width: 259px;
+    margin-bottom: 48px;
+}
+
+.restaurant-details__list{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 16px;
+}
+
+// .restaurant-details__item{
+//    @media screen and (max-width:1023px){
+//         &:not(:last-child){
+//             margin-bottom: 16px;
+//         }
+//     }
+//    }
+
+.restaurant-details__button{
+    padding: 14px 24px;
+}
+.restaurant-details__button--link{
+    white-space: nowrap;
+    max-width: 236px;
+    padding: 14px 32px;
+}

@@ -1,0 +1,48 @@
+.main-restaurant {
+    position: relative;
+    padding-top: 16px;
+    padding-bottom: 20px;
+    max-width: 414px;
+    margin: 0 auto;
+
+    background-color: var(--bcg-color);
+}
+
+
+.main-restaurant__box{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-restaurant__subtitle{
+    @extend %subtitle;
+}
+
+.main-restaurant__name {
+    @extend %brand-name;
+
+@media screen and (max-width:1023px) {
+        margin-bottom: 12px;
+    }
+}
+
+.main-restaurant__text{
+    @extend %text;
+}
+
+.main-restaurant__text--dark{
+      @extend %text--dark;
+}
+
+.main-restaurant__text--brown {
+  @extend %text--brown;
+}
+
+.main-restaurant__image {
+    @extend %image;
+}
+
+.main-restaurant__image--taller {
+    @extend %image--main;
+}

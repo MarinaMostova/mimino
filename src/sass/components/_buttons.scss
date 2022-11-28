@@ -1,0 +1,23 @@
+.button {
+
+    padding: 13px 24px 11px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--text-accent-color);
+
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+}
+
+.button-link{
+    display: block;
+    font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
+        color: var(--text-accent-color);
+
+    background: rgba(0, 0, 0, 0.4);
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;}

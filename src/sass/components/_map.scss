@@ -1,0 +1,54 @@
+.map {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+padding-top: 8px;
+padding-bottom: 9px;
+    padding-left: 6px;
+    width: 210px;
+
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+
+    @media screen and (min-width:1024px) {
+        width: 285px;
+        padding: 8px;
+        padding-left: 10px;
+    }
+}
+
+.map__container{
+position: absolute;
+right: 15px;
+top: 64px;
+
+@media screen and (min-width:1024px) {
+  position: static;
+ 
+  
+
+    // display: flex;
+    // justify-content: end;
+    // margin-bottom: 70px;
+}
+}
+
+.map__icon {
+    fill: var(--text-accent-color) ;
+    
+}
+
+.map__text{
+ text-align: left;
+font-family: var(--prymary-font);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    color: var(--text-map-color);
+    
+    @media screen and (min-width:1024px) {
+            font-size: 16px;
+    
+        }
+}

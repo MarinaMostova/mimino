@@ -1,0 +1,141 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 64px;
+    max-width: 414px;
+
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+
+    // @media screen and(min-width: 414px) and(max-width: 1023px) {
+     
+    // }
+
+    @media screen and (min-width: 1024px) {
+        max-width: 1024px;
+        height: 100px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        max-width: 1280px;
+    }
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (min-width:1024px) and (max-width:1279px){
+        gap: 87px;
+    }
+
+        @media screen and (min-width: 1280px) {
+          justify-content: left;
+        }
+}
+
+.navigation__list {
+    display: flex;
+    @media screen and (max-width:1023px) {
+    justify-content: space-between;}
+
+    @media screen and (min-width:1024px) {
+      gap: 72px;
+    }
+    @media screen and (min-width:1280px) {
+     margin-right: 59px;
+     }
+
+}
+
+ .navigation__item {
+     display: flex;
+     align-items: center;
+
+     @media screen and (max-width:1023px) {
+
+         padding-top: 28px;
+         padding-bottom: 12px;
+
+         &:not(:last-child) {
+             margin-right: 6px;
+         }
+     }
+
+     @media screen and (min-width:1024px) {
+         padding: 30px 0;
+
+        // &:not(:last-child) {
+        //         margin-right: 72px;
+        //     }
+     }
+ }
+.navigation__link {
+    font-family: var(--prymary-font);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--text-accent-color);
+
+    @media screen and (min-width:1024px) {
+        margin-right: 32px;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+}
+  
+
+
+.navigation__contacts {
+    display: flex;
+    align-items: center;
+
+    @media screen and (min-width:1024px) {
+            padding: 8px;
+      
+        border: 1px solid rgba(243, 198, 83, 0.7);
+        border-radius: 2px;
+      
+    }
+}
+
+.navigation__icon {
+    fill: var(--text-accent-color);
+
+    @media screen and (min-width:1024px) {
+        margin-right: 8px;
+       }
+}
+
+.navigation__phone {
+    @media screen and (max-width:1023px) {
+        display: none;
+    }
+
+    @media screen and (min-width:1024px) {
+        white-space: nowrap;
+     
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.21;
+        color: var(--text-white-color);
+    }
+}
+
+.navigation__phone--long {
+    margin-right: 16px;
+}
+
+.header__networks {
+display: none;
+@media screen and (min-width:1280px) {
+display: block;
+    }
+}
+
+
